@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./dist/reset.css" />
     <link rel="stylesheet" href="./dist/reveal.css" />
-    <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./dist/theme/solarized.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/zenburn.css" />
 
 
@@ -24,13 +24,32 @@
 3. AWS + hands-on
 4. Docker + hands-on
 5. Infrastructure as Code + hands-on
-6. Bonus: kubernetes
+6. Bonus: Kubernetes
 </script></section><section  data-markdown><script type="text/template">
 ## Virtualization vs Containers
 </script></section><section  data-markdown><script type="text/template">
-### Virtualization vs Containers
+### Evolution of virtualization
 
-![Toto](assets/virtu-docker.png)</script></section></div>
+![Virtualization Evolution](assets/virtu-docker.png)
+</script></section><section  data-markdown><script type="text/template">
+## Cloud computing
+</script></section><section  data-markdown><script type="text/template">
+### Concepts
+
+* The infrastructure is shared
+
+* The services are accessed on demand in units that vary by service. 
+
+* Services are scalable.
+
+* The pricing model is by consumption. 
+
+* Services can be accessed from anywhere in the world by multiple devices.
+</script></section><section  data-markdown><script type="text/template">
+### IaaS / PaaS / SaaS
+
+![IaaS / PaaS / SaaS](assets/IaaS-PaaS-SaaS.png)
+</script></section></div>
     </div>
 
     <script src="./dist/reveal.js"></script>
@@ -73,7 +92,7 @@
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"controls":true,"progress":true}, queryOptions);
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"transition":"fade"}, queryOptions);
     </script>
 
 
